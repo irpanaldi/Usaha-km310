@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Modal Box for Item Detail</title>
+  <!-- Include Feather Icons CSS (Assuming you've downloaded the library) -->
+  <link rel="stylesheet" href="path/to/feather-icons.css">
+  <title>UKM310</title>
+  <!-- Fonts -->
+  <link rel="stylesheet" href="path/to/your/css/file.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- My Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Include Alpine.js and Feather Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+   <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">
+      <img src="img/logo.jpg">USAHA<span>UKM</span>310.</span>
+  </a>
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#menu">Menu</a>
+      <a href="#products">Produk</a>
+      <a href="#contact">Kontak</a>
+      <a href="login/register.html">Logout</a>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="search-button"><i data-feather="search"></i></a>
+      <a href="#"id="shopping-cart-button">
+        <i data-feather="shopping-cart"></i>
+        <span class="quantity-badge">3</span></i></a>
+      <a href="login.html" id="login-button"><i data-feather="user"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      
+    </div>
+    
+    <!-- Search Form start -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+    <!-- Search Form end -->
+    <!-- Shopping Cart start -->
+    <div class="shopping-cart">
+      <div class="cart-item">
+        <img src="img/products/1.jpg" alt="Product 1">
+        <div class="item-detail">
+          <h3>KERUPUK KEPO PEDAS</h3>
+          <div class="item-price">Rp15.000</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+      <div class="cart-item">
+        <img src="img/products/2.jpg" alt="Product 2">
+        <div class="item-detail">
+          <h3>KUE DURI-DURIAN</h3>
+          <div class="item-price">Rp26.000</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+      <div class="cart-item">
+        <img src="img/products/3.jpg" alt="Product 3">
+        <div class="item-detail">
+          <h3>KERUPUK KEPO HIJAU</h3>
+          <div class="item-price">Rp15.000</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+    </div>
+    <!-- Shopping Cart end -->
+ </nav>
+  <!-- Navbar end -->
+  <!-- Hero Section start -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1> Durian cake <span> and</span> Savory <span> or </span> Crispy Kepo Rackers</h1>
+      <p><h3>Apakah Anda pernah mencoba perpaduan unik antara manisnya 
+        kue durian yang lezat dan rasa gurih krupuk kepo yang renyah? 
+        Jika belum, Anda pasti sedang melewatkan pengalaman kuliner yang tak terlupakan!</h3></p>
+      <button class="btn">Beli Sekarang</button>
+    </main>
+  </section>
+  <!-- Hero Section end -->
+  <!-- About Section start -->
+  <section id="about" class="about">
+    <h2><span>Tentang</span> Kami </h2>
+    <div class="row">
+      <div alt="Tentang Kami"></div>
+      <div class="about-img">
+        <img src="img/tentang-kami.jpg">
+      </div>
+      <div class="content">
+        <h3>Kenapa memilih Usaha UKM 310 ?</h3>
+        <p>Usaha 310 (UKM310) di ambil dari nama lorong 310 yaitu tepatnya di jl.dahlia tempat tinggal saya,
+           Didirikan kurang lebih 4 tahun, dan memiliki beberapa produk Cemilan dan kue kering.</p>
+        <p>Kue duri-durian khsa makassar saat ini alhamdulillah banyak yang kenal berkat rajinnya mengikuti 
+          pameran yang biasa dilakukan, Diskop dan dinas lainya.</p>
+      </div>
+    </div>
+  </section>
+  <section id=""class="menu">
+    <h1><span></h>
+  <p>Jangan ragu untuk mencicipi kue durian dengan tambahan krupuk kepo dan jadikan momen kuliner Anda lebih istimewa!</h4>
+  </p>
+</section>
+  <!-- About Section end -->
+  <!-- Menu Section start -->
+  <section id="menu" class="menu">
+    <h2><span>Menu</span> Kami</h2>
+    <p>Nikmati sensasi manis lezat dari kue durian yang khas dan kegurihan krupuk kepo yang renyah dalam satu menu yang menggoda selera Anda.
+       Segera kunjungi kami dan rasakan harmoni rasa yang tak terlupakan!</p>
+    <div class="row">
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">kerupuk kepo</h3>
+        <p class="menu-card-price">Rp 15.000</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/2.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">Kue durian</h3>
+        <p class="menu-card-price">Rp 26.000</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/3.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">Kerupuk Kepo Hijau</h3>
+        <p class="menu-card-price">Rp 16.000</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/4.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">Kerupuk Kepo Merah</h3>
+        <p class="menu-card-price">Rp 16.000</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/5.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">Kue Duri-Durian</h3>
+        <p class="menu-card-price">Rp 26.000</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/6.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">kue duri-durian</h3>
+        <p class="menu-card-price">Rp 26.000</p>
+      </div>
+    </div>
+  </section>
+  <!-- Menu Section end -->
+
+  <!-- Products Section start -->
+  <section class="products" id="products">
+    <h2><span>Produk Unggulan</span> Kami</h2>
+    <p>Kejutan Durian dalam Setiap Gigitan, Kerupuk Kepo yang Bikin Nagih!</p>
+    <div class="row">
+      <div class="product-card">
+        <div class="product-icons">
+          <a href="https://wa.me/qr/UQDT5GVUT5LFD1"><i data-feather="shopping-cart"></i></a>
+          <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+        </div>
+        <div class="product-image">
+          <img src="img/products/1.jpg" alt="Product">
+        </div>
+        <div class="product-content">
+          <h3>Kerupuk kepo </h3>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">Rp 15.000 <span>Rp 20.000</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-icons">
+          <a href="https://wa.me/qr/UQDT5GVUT5LFD1"><i data-feather="shopping-cart"></i></a>
+          <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+        </div>
+        <div class="product-image">
+          <img src="img/products/2.jpg" alt="Product">
+        </div>
+        <div class="product-content">
+          <h3>Kue Duri-Durian</h3>
+          <div class="product-stars">
+             <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">Rp 26.000 <span>Rp 30.000</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-icons">
+          <a href="#https://wa.me/qr/UQDT5GVUT5LFD1"><i data-feather="shopping-cart"></i></a>
+          <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+        </div>
+        <div class="product-image">
+          <img src="img/products/3.jpg" alt="Product">
+        </div>
+        <div class="product-content">
+          <h3>Kerupuk Kepo </h3>
+          <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">Rp 15.000 <span>Rp 20.000</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-icons">
+          <a href="https://wa.me/qr/UQDT5GVUT5LFD1"><i data-feather="shopping-cart"></i></a>
+          <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+        </div>
+        <div class="product-image">
+          <img src="img/products/4.jpg" alt="Product">
+        </div>
+        <div class="product-content">
+          <h3>Kerupuk Kepo pedas </h3>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">Rp 16.000 <span>Rp 20.000</span></div>
+        </div>
+      </div>
+       <div class="product-card">
+        <div class="product-icons">
+          <a href="https://wa.me/qr/UQDT5GVUT5LFD1"><i data-feather="shopping-cart"></i></a>
+          <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+        </div>
+        <div class="product-image">
+          <img src="img/products/5.jpg" alt="Product">
+        </div>
+        <div class="product-content">
+          <h3>Kue duri-durian </h3>
+          <div class="product-stars">
+             <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">Rp 26.000 <span>Rp 30.000</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Products Section end -->
+
+  <!-- Contact Section start -->
+  <section id="contact" class="contact">
+    <h2><span>Hubungi</span> Kami</h2>
+    <p><i class="fas fa-map-marker"></i>  Alamat : Jl. Dahlia, Mattoangin, Kec. Mariso, Kota Makassar, Sulawesi Selatan 90121</p>
+    <p><i class="fas fa-phone"></i> No Hp : 085348848511 </p>
+    <p><i class="fas fa-envelope"></i> Email : ukm310@gimal.com</p>
+    </h2>
+    <div class="row">
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15894.6836678!2d119.39422282128747!3d-5.156547204349208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf1db96d41069b%3A0xe9b4bf751d5c37c7!2sPesona%20Taman%20Dahlia!5e0!3m2!1sms!2sid!4v1699857250993!5m2!1sms!2sid"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>"
+      <form action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="nama">
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" placeholder="email">
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" placeholder="no hp">
+        </div>
+        <a href="https://wa.me/qr/UQDT5GVUT5LFD1" class="btn" target="_blank">Kirim Pesan WhatsApp</a>
+      </form>
+    </div>
+  </section>
+  <!-- Contact Section end -->
+  <!-- Footer start -->
+  <footer>
+   <div class="socials">
+      <a href="https://www.instagram.com/ukm310"id=""><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+   </div>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Kontak</a>
+    </div>
+    <div class="credit">
+      <p>Created by <a href="">Usaha UKM 310</a>. | &copy; 2023/2024.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  <!-- Modal Box Item Detail start -->
+  <div class="modal" id="item-detail-modal-1">
+    <div class="modal-container">
+      <a href="#" class="close-icon"><i data-feather="x"></i></a>
+      <div class="modal-content">
+        <img src="img/products/1.jpg" alt="Product 1">
+        <div class="product-content">
+          <h3>kerupuk kepo</h3>
+          <p>Kerupuk Kepo adalah jenis kerupuk yang terkenal dengan rasa gurih dan renyahnya. Kerupuk ini terbuat dari bahan-bahan berkualitas dan diproses dengan teknik yang khas untuk menghasilkan tekstur yang sempurna. Kerupuk Kepo menjadi favorit banyak orang karena kelezatannya yang menggoda dan menjadi pilihan yang sempurna untuk camilan atau pendamping hidangan.</p>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">Rp 15.000 <span>Rp 20.000</span></div>
+          <a href="#"><i data-feather="shopping-cart"></i> <span>Pesan Sekarang</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="item-detail-modal-2">
+    <div class="modal-container">
+      <a href="#" class="close-icon"><i data-feather="x"></i></a>
+      <div class="modal-content">
+        <img src="img/products/2.jpg" alt="Product 2">
+        <div class="product-content">
+          <h3>Kue dudri-durian</h3>
+          <p>Kue Durian memiliki rasa yang manis dengan sentuhan kelembutan dan keharuman buah durian yang kuat. Bagi pecinta durian, kue ini menjadi hidangan yang sangat menggugah selera. Kue Durian sering dijadikan pilihan untuk hidangan penutup atau camilan yang lezat. 
+             Selain rasa yang lezat, kue durian juga memiliki nutrisi yang bermanfaat.</p>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">Rp 26.000 <span>Rp 30.000</span></div>
+          <a href="#"><i data-feather="shopping-cart"></i> <span>Pesan Sekarang</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="item-detail-modal-3">
+    <div class="modal-container">
+      <a href="#" class="close-icon"><i data-feather="x"></i></a>
+      <div class="modal-content">
+        <img src="img/products/3.jpg" alt="Product 3">
+        <div class="product-content">
+          <h3>kerupuk kepo hijau</h3>
+          <p>Kerupuk Kepo Hijau sering kali menjadi pilihan camilan yang populer di berbagai acara atau sebagai pendamping hidangan utama. Kelezatan dan keunikan warna hijau pada kerupuk ini membuatnya menjadi pilihan yang menarik bagi pecinta kerupuk yang ingin mencoba variasi baru.</p>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">Rp 15.000 <span>Rp 20.000</span></div>
+          <a href="#"><i data-feather="shopping-cart"></i> <span>Pesan Sekarang</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+  <!-- Modal Box Item Detail end -->
+  <!-- Feather Icons -->
+  <script>
+    feather.replace()
+  </script>
+  <!-- My Javascript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
